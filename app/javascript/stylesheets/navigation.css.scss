@@ -1,5 +1,6 @@
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
-  background-color: #08088A !important;
+  background-color: #33ccff !important;
+  background: linear-gradient(45deg, blue, red);
 }
 
 #logo {
@@ -12,6 +13,17 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 } 
 
 #logo:hover {
-  color: #fff;
+  color: #ccc;
   text-decoration: none;
 }
+
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  color: #ccc !important;
+}
+
+
+
