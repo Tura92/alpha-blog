@@ -1,14 +1,14 @@
 <%= render 'shared/errors', obj: @article %>
 
 
-<div class='row'>
+<div class='row d-flex flex-column'>
   <div class="col-xs-12">
       <%= form_for @article do |f| %>
         <div class="form-group row">
           <div class="control-label col-sm-2">
               <%= f.label :title, class: "col-sm-2 col-form-label" %>
           </div>
-          <div class="col-sm-8" style="width: 30vw; margin:auto;">
+          <div class="col-sm-8">
             <%= f.text_field :title, class: "form-control", placeholder: "Title of article", autofocus: true %>
           </div>
         </div>
@@ -17,7 +17,7 @@
           <div class="control-label col-sm-2">
             <%= f.label :description, class: "col-sm-2 col-form-label" %>
           </div>
-          <div class="col-sm-8" style="width: 50vw; margin: auto;">
+          <div class="col-sm-8">
             <%= f.text_area :description, rows: 10, class: "form-control", placeholder: "Body of article" %>
           </div>
         </div>
@@ -28,7 +28,7 @@
           </div>
         </div>
       <% end %>
-      <div class="col-xs-4 col-xs-offset-4">
+      <div class="col-xs-4 col-xs-offset-4" align="center">
           [ <%= link_to "Cancel request and return to articles path", articles_path %> ]
       </div>
     

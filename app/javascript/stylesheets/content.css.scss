@@ -2,6 +2,10 @@
   text-align: center ;
 }
 
+.card {
+  padding: 15px;
+}
+
 .jumbotron {
   background-image: url(../../assets/images/jumbotron_background_code.jpg);
   background-size: cover;
@@ -21,6 +25,15 @@
 .article-actions {
   border-top: 1px solid #eaeaea;
   padding-top: 5px;
+}
+
+.article-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.article-body {
+  border-top: 1px solid #eaeaea;
 }
 
 .description {
